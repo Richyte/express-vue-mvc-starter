@@ -1,0 +1,5 @@
+node_modules/**
+app/assets/scripts/**
+test/**
+gulpfile.babel.js
+dist/**
