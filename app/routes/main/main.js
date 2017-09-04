@@ -1,6 +1,6 @@
-// @flow
+// 
 
-module.exports.default = (router: Object) => {
+module.exports.default = (router) => {
     router.get('/', (req, res) => {
         const data = {
             title: 'Hello World'

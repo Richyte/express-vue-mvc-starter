@@ -1,4 +1,4 @@
-// @flow
+// 
 exports.default = {
     data: function () {
         return {

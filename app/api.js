@@ -1,8 +1,8 @@
-// @flow
+// 
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const setupRouter = function (): Object {
+const setupRouter = function () {
     const bodyParserEncoder = bodyParser.urlencoded({
         extended: false
     });

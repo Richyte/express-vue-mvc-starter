@@ -1,5 +1,5 @@
-// @flow
-function paramObject(object: Object): string {
+// 
+function paramObject(object) {
     let str = '';
     for (let key in object) {
         if (str != '') {

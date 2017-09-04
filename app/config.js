@@ -1,4 +1,4 @@
-// @flow
+// 
 const dotenv = require('dotenv');
 const Models = require('./models');
 

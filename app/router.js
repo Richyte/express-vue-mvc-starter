@@ -1,4 +1,4 @@
-// @flow
+// 
 const express = require('express');
 const glob = require('glob');
 const logger = require('morgan');
@@ -14,7 +14,7 @@ const expressVue = require('express-vue');
 const oauth2Api = require('./api');
 const path = require('path');
 
-module.exports.init = (app: Object, config: Object) => {
+module.exports.init = (app, config) => {
     //Setup
     const env = process.env.NODE_ENV || 'development';
     const router = express.Router();
@@ -111,7 +111,7 @@ module.exports.init = (app: Object, config: Object) => {
     app.use('/', router);
 
     let controllers = glob.sync(config.root + '/routes/**/*.js');
-    controllers.forEach(function (controller: string) {
+    controllers.forEach(function (controller) {
         module.require(controller).default(router);
     });
 
