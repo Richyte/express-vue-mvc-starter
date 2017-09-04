@@ -1,4 +1,4 @@
-// @flow
+// 
 const express = require('express');
 const config = require('./config');
 const Router = require('./router');
@@ -10,7 +10,7 @@ let app = express();
 Router.init(app, config);
 
 if (cluster.isMaster && config.env !== 'development') {
-    let workers: Object[] = [];
+    let workers = [];
     for (var i = 0; i < os.cpus().length; i++) {
         workers[i] = cluster.fork();
         workers[i].on('exit', (code, signal) => {

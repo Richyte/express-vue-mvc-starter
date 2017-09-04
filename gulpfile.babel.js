@@ -51,9 +51,7 @@ gulp.task('babel', ['vue'], () => {
     const stream = gulp.src(paths.es6)
         .pipe(sourceMaps.init())
         .pipe(babel())
-        .pipe(sourceMaps.write('.', {
-            sourceRoot: paths.sourceRoot
-        }))
+        .pipe(sourceMaps.write())
         .pipe(gulp.dest(paths.dest))
         .pipe(livereload());
     return stream;
