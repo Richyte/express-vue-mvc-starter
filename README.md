@@ -14,6 +14,6 @@ Copy this repo, change the package.json, and go through the router.js file and c
 
 **Building and Running in prod**
 
-1. `npm build`
+1. `npm run build`
 2. `ENV=production npm dist`
 
